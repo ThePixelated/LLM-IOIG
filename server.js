@@ -19,7 +19,7 @@ app.post('/chat', async (req, res) => {
       : message;
 
     const response = await ai.models.generateContent({
-      model: 'models/gemini-2.0-flash-lite-001',
+      model: 'models/gemini-2.0-flash-lite',
       contents: fullPrompt,
     });
 
